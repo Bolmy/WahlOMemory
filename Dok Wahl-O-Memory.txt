@@ -1,0 +1,102 @@
+Grobbeschreibung: Wahl_o_Memory
+
+Aufgabenstellung: Vorliegende Informationen zu speziellen politischen Themen und Fragestellungen sowie die Positionen der einzelnen Parteien zu diesen in einer ansprechenden Weise visuell aufarbeiten und in Form eines Memoryspiels umsetzen (Zuordnung Partei - politische Stellungnahme). Ziel ist die spielerische Auseinandersetzung mit verschiedenen politischen Parteien und Richtungen. 
+
++ potenzielle Auswertungsmöglichkeiten nach x Tagen für 
+
+a) Meinungsbild der Nutzer bzw. Beliebtheit der Parteien/Programme (wäre z.B. über ein lightweight Like-basiertes Wertungssystem der Statements beim Zuordnen umsetzbar) 
+
+b) intuitive Verständlichkeit der Parteiprogramme (welche Parteien können schnell richtig zugeordnet werden, bzw. welche Parteiziele sind nicht eindeutig einer Partei zuzuordnen)
+Anmerkung: Bestimmte Thematiken eigenen sich für diese Unterscheidung nicht, da mehrere Parteien die gleiche Strategie verfolgen können (z.B. Förderung des Erasmus+ bei der Europawahl)
+
+Ansatz: Web-Anwendungsgerüst erstellen, welches Wahlspezifisch ausgestaltet werden kann. Parteien werden modular angelegt, sodass sie bei Auflösung oder beim Erstellen neuer Parteien entsprechend behandelt werden können. Auch Änderungen der Parteihaltungen können auftreten sowie neue politische Fragestellungen aufkommen. Daher soll das System auch unter dem Aspekt der Fragen und Antworten der Parteien bearbeitbar bleiben. 
+
+So kann vor einer anstehenden Wahl alles passend eingerichtet werden und anschließend eine Veröffentlichungsphase stattfinden, in der keine Änderungen vorgenommen werden können. Ähnlich wie der Wahl-O-Mat kann der Zugang über das Internet erreichbar sein und anonym genutzt werden (keine entsprechenden Daten speichern) Nach einer bestimmten Zeit (z.B. nach Ende der Wahl) kann dann eine Auswertung mithilfe der Datenbank erfolgen, die u.U. interessante (statistische) Zusammenhänge hervorbringt.
+
+
+
+Disclaimer: 
+
+Zur Landtagswahl 2024 treten mehr als die hier aufgeführten Parteien an. Die präsentierte Auswahl ist durch die Menge der Wählerstimmen aus der Europawahl 2019 und die Kooperationsbereitschaft der Parteien entstanden.
+
+Die in dieser Anwendung zum aktuellen Stand (23.06.24) verarbeiteten Angaben stammen aus dem Wahlkampf der Europawahl 2024. Es ist zu beachten, dass sowohl Fragen als auch Strategien/Positionen der Parteien in verkürzter Fassung dargestellt werden. Die ausführlichen Parteiprogramme sind den einzelnen Parteien zu entnehmen.
+
+
+
+
+
+
+
+Umsetzung: 
+	Hauptkomponenten:  
+		UI für eigentliches "Spiel" <- Prototyp erstellt,
+		Datenbank und Verbindung <- durch Hard-coded Content ersetzt
+
+
+	UI: 
+		Zentral: Fragestellung
+
+		Parteien durch Logo repräsentiert als Karten untereinander gelistet
+		dynamische Karten für pol. Statements/Haltungen
+
+	Spielerhandlung: Parteikarte auf pol. Position/Statement ziehen, Score sammeln
+
+
+
+
+Erweiterungen für mehr Gamification: 
+	+ score erweitern (score entsteht durch richtiges Zuordnen, bei Fehlern gibt es Abzug bzw. gibt es nach dem (richten) Abschließen einer Frage Punkte entsprechend 	der Fehlerquote (mehr Fehler = weniger Punkte)
+
+	+ Sterne/Likebutton (gibt nach Abschluss des "Spiels" die Möglichkeit, ähnlich wie beim Wahl-O-Mat die Übereinstimmung der eigenen Vorlieben mit den Parteiprogrammen 	zu ermitteln.) <- birgt die Gefahr, dass vielleicht ungewollt zu bestimmten Wahlentscheidungen motiviert wird, da Parteiprogramme in ihrer Komplexität schlecht in 	diesem Rahmen widergespiegelt werden können. 
+	
+	+ Karten animieren: z.B. Schwebeanimation, Kollision 
+
+	+ Achievements oder freischaltbare Inhalte hinzufügen (z.B. eine besonders bedeutungsvolle oder gelungene Rede oder Fun Fact oder biografische Besonderheit <- 	Orientierung an Ladebildschirmen in Videospielen) 
+
+
+Überlegung für die Datenbank: 
+	Frage/Antwort-Konstellationen getrennt von Auswertung ablegen
+
+
+Verwendete Technologie:
+
+Vue.js
+
+
+
+
+
+
+
+Parteien Thüringenwahl 2024
+
+- AfD
+- CDU
+- Linke
+- SPD
+- Bündnis 90/Die Grünen
+- FDP
+- Bündnis für Thüringen
+- BSW - Bündnis Sahra Wagenknecht
+- Werteunion
+
+Kompromiss: 5 große Parteien
+CDU
+SPD
+Grüne
+Linke
+FDP
+
+
+
+
+beschränkung begründen
+Auf diesem Plakat müssen wir uns aus Platzgründen auf die Antworten von sechs Parteien bzw. politischen Vereinigungen beschränken. Dafür haben wir diejenigen ausgewählt, die
+zur Europawahl 2019 in Deutschland die meisten Stimmen erhalten haben und ihnen am 22. Februar 2024 die Fragen geschickt. Die Antworten aller weiteren Parteien und politischen
+Vereinigungen sind unter u18.org zu fi nden. 
+
+Die Auswahl der Fragen bezieht sich auf Themen, welche von Kindern und Jugendlichen im Rahmen des EU Jugenddialogs diskutiert wurden.
+
+Der Jugenddialog ist das zentrale
+Dialog- und Beteiligungsformat der Europäischen Union mit jungen Menschen. In Deutschland ist der Jugenddialog beim Deutschen Bundesjugendring angesiedelt.
+
